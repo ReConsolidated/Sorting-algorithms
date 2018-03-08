@@ -53,7 +53,7 @@ void MergeSort(T tab[], int size)
 	{
 		tab2[i-mid] = tab[i];
 	}
-	MergeSort(tab1, mid);
-	MergeSort(tab2, dim);
+	MergeSort<T>(tab1, mid);
+	MergeSort<T>(tab2, dim);
 	Merge<T>(tab1, mid, tab2, dim, tab);
 }
